@@ -1,0 +1,207 @@
+@import "../variable/variable";
+
+.email-left
+{
+	.top-header
+	{
+		@include respond-to(handhelds2)
+		{
+			display:none!important;
+		}
+		a
+		{
+			color:$default-color;
+			font-family:$font-light;
+		}
+	font-family:$font-light;
+	padding:$value30/5;	
+	color:$default-color;
+	border-bottom: 1px solid $color-lt-grey;
+	}
+	.my-logo
+	{
+		@include respond-to(handhelds)
+	{
+		position: initial;
+		margin-left:$value0;
+	}
+		
+		
+	    position: absolute;
+     top: $value0;
+    left: $value40/4;
+	    margin: $rem2/2;
+	}
+	form.email-form
+	{
+
+		h1
+		{
+			  @include respond-to (handhelds)
+	{
+		font-size:$value30+6;
+		
+	}
+			font-family: $font-light;	
+		  color:$color-dark-grey;
+		  margin-bottom:$rem2
+	}
+	.form-footer
+	{
+    button
+	{
+		@include respond-to(handhelds)
+		{
+			margin-bottom:$value40/2!important;
+		}
+		i.fa{
+		    font-size:$value30/2;
+        margin-left: $value40/10;
+		}
+    font-family: $font-bold;
+    font-size: $value40/2;
+    padding: 13px 34px;
+    border-radius: $value40/10;
+	}
+.checkbox
+{
+label
+{  
+    @include respond-to(handhelds)
+	{
+		max-width:initial!important;		
+	}
+   font-family: $font-light;
+    font-size:$value30/2;
+        font-weight: 600;
+    color: $default-color;
+    line-height: 1.5rem;
+    max-width: 275px;
+    margin: auto;	
+	margin-bottom:$value40/2;
+}
+}	
+    @include respond-to(handhelds)
+	{		
+		position:initial;
+	}
+	position:absolute;
+	bottom:$value40;
+    left: $value0;
+    right: $value0;   
+    text-align: $center;  
+	}
+	input.form-control
+	{
+    @include inputform;    
+	}
+	.form-top
+	{
+		margin-bottom:$value50*2;
+	}
+	@include respond-to(handhelds)
+	{ padding:$value0 $value40/2;
+		height:auto;
+	}
+	padding:$value0 $value40;
+	height: 100%;
+    display: flex;   
+    justify-content: center;
+    flex-direction: column;
+	}
+	.form-top{
+		
+		label
+		{
+			span
+			{
+			    font-family: "Conv_Lato-light";	
+			}
+			font-size:$value30/2+1;
+			font-family:$font-regular;
+	}
+	  @include respond-to (handhelds)
+	{
+		margin-bottom:$value40/2!important;
+		
+	}
+	}
+  p.term-condition 
+  {
+		@include respond-to(handhelds2)
+		{
+			display:none!important;
+		}
+	  a
+	  { 
+	    color: $default-color;
+		 font-family:$font-regular; 
+	  }
+    padding:$value40/4 $value40/4+2;
+    font-size:$value40/4+3;  
+    color: $default-color;
+	font-family:$font-light;
+    background-color: $color-light-grey;
+    border-radius: $rem2/8;
+  }
+
+
+	overflow:hidden
+}
+
+
+.full-height
+{
+height:$full-height;	
+}
+.email-right
+{
+	.right-top
+	{
+	
+	p
+	{
+		span
+		{
+		font-family: $font-light;
+		}
+		a
+		{
+		display: inline-block;
+		height:$value30+4;
+		line-height: $value40/2;
+		padding:$value30/5 $value40/4+2;	
+		border: 1px solid $color-white;
+		text-decoration: none;
+		border-radius: $rem2/8;			
+		color:$color-white;
+	    font-family:$font-regular;
+		}
+a:hover
+{
+    background: $color-white;
+    color:$color-dark-grey!important
+}	
+	font-size:$value30/2;
+   	color:$color-white;	
+	}
+	height: 100%;
+	padding:$value40/2 10%;	
+	}
+.signup-background
+{
+    height: $height;
+    width: 70%;
+    background-repeat: no-repeat !important;
+    background-position: 50% !important;
+    background-size: contain!important; 
+    margin: auto;
+}  
+@include respond-to(handhelds)	
+	{
+		display:none;
+	} 
+  overflow:hidden;
+	background:$blue;
+	
+}

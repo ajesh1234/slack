@@ -1,0 +1,83 @@
+@import "../variable/variable";
+.my-logo
+{
+margin:$rem2/2;
+}
+.teaminfo
+{ 
+.btn-group
+{
+label.btn.btn-green.active{
+    border-color: #2ab27b;
+    background-color: rgba(42,178,123,.2);
+}
+label.btn.btn-green {
+    width: $height/2;
+    background: $color-white;
+    height:  $value40+6;
+    font-size: $value30/2+3!important;
+    line-height: $value30;
+    border: 1px solid #C7CACD;
+font-family: "Conv_Lato-regular"!important;
+}
+label.btn.btn-green:first-child {
+border-top-left-radius: $rem2/8;
+border-bottom-left-radius: $rem2/8;
+}
+label.btn.btn-green:last-child {
+border-top-right-radius: $rem2/8;
+border-bottom-right-radius: $rem2/8;
+}
+width:100%;
+}
+.form-group
+{
+margin-bottom:$value40/2+3;
+}
+select option {
+       -webkit-font-smoothing: antialiased;
+	 font-size:16px;
+	font-family: $font-light;
+    font-weight: 900;
+ }
+label
+
+{    -webkit-font-smoothing: antialiased;
+    font-family: $font-medium;
+color:$color-dark-grey;
+font-size:$value30/2+1;
+}
+
+
+	h1
+		{
+			  @include respond-to (handhelds)
+	{
+		font-size:$value30+6;
+		
+	}
+	    font-size: $value40+2;
+    line-height: $value40+8;
+			font-family: $font-light;	
+		  color:$color-dark-grey;
+		  margin-bottom:$rem2
+	}
+	select.form-control
+{
+  background: url('../../assets/images/arrow-down.png') no-repeat right 0.75rem center;
+@include inputform;        height: auto;
+}
+	button
+	{
+	i.fa{
+		    font-size:$value30/2;
+        margin-left: $value40/10;
+		}
+		    margin-top: $value30/2+2;
+    font-family: $font-bold;
+    font-size: $value40/2;
+    padding: 13px 34px;
+    border-radius: $value40/10;
+	}
+	padding:0 $value30/2 $value30/2 $value30/2;
+}

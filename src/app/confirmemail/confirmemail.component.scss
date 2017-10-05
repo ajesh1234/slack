@@ -1,0 +1,87 @@
+@import "../variable/variable";
+.my-logo
+{
+margin:$rem2/2;
+}
+form.confirmation-top
+{
+	h1
+		{
+			  @include respond-to (handhelds)
+	{
+		font-size:$value30+6;
+		
+	}
+			font-family: $font-light;	
+		  color:$color-dark-grey;
+		  margin-bottom:$rem2
+	}
+	.form-group
+	{
+		label
+		{
+			span
+			{
+			    font-family: "Conv_Lato-light";	
+			}
+			font-size:$value30/2+1;
+			font-family:$font-regular;
+			color:$default-color;
+	}
+}
+.confirmation-div
+{
+
+.confirm-input {
+input {
+    padding:$rem2/3;
+border:$none;
+background:$none;
+height: 5rem;
+    text-align: center;
+	font-family:$font-regular;
+	color:$default-color;
+    font-size: $value30+6;
+width:100%;
+}
+
+    display: table-cell;
+    border: 1px solid $color-dk-grey
+	
+	
+	}
+	.confirm-input:first-child{
+    border-top-left-radius: $value30/6;
+    border-bottom-left-radius: $value30/6;
+	    border-right: $none;
+}
+	.confirm-input:last-child{
+	    border-left: $none;
+    border-top-right-radius: $value30/6;
+    border-bottom-right-radius: $value30/6;
+}
+.confirmation-left
+{
+display:table-cell;
+}
+.confirmation-middle
+{    vertical-align: middle;
+    width: $rem2;
+color:$color-dk-grey;
+padding: $value0 $rem2/4;
+font-weight:700;
+font-size:$rem2
+}
+display:table;
+}
+p{
+font-family:$font-light;
+color:$color-dk-grey;
+font-size: $value40/2;
+line-height: $normal;
+font-weight:700;
+margin-bottom:$value30+2;
+}
+padding:0 $value30/2 $value30/2 $value30/2;
+
+}

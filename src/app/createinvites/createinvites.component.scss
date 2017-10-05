@@ -1,0 +1,110 @@
+@import "../variable/variable";
+.my-logo
+{
+margin:$rem2/2;
+}
+.create-invites
+{
+	h1
+		{
+			  @include respond-to (handhelds)
+	{
+		font-size:$value30+6;
+		
+	}
+	    font-size: $value40+2;
+        line-height: $value40+8;
+	    font-family: $font-light;	
+		color:$color-dark-grey;
+		margin-bottom:$rem2/4
+	}
+	.form-group
+	{
+	label
+	{
+	color:$color-dark-grey;
+	font-size:$value30/2+1;
+	font-family:$font-regular;
+	}
+	a
+	{
+	color:$dark-blue;
+    font-size:$value30/2+1;
+	font-family:$font-regular;
+	}
+	input.form-control
+	{
+	margin-bottom:$rem2/4;
+	@include inputform;
+	}
+		.form-inner:hover
+	{
+	i 
+	{
+	opacity:1;
+	}
+	}
+	.form-inner
+	{
+	i
+	{ 	
+	opacity:0;
+	  position: absolute;
+    right: -$value30+5;
+    top: -2+$value40/4;
+    color:$color-dk-grey;
+    font-size:$value40/2+2;
+	}
+	position:relative;
+	}
+	
+	}
+	p.head-top
+	{	
+	font-family:$font-light;
+	font-weight: 700;
+	font-size: $rem2/2 + $rem2/8;
+    color: $color-dk-grey;
+	line-height:$rem2/2 + $rem2/4;
+    margin-bottom: $rem2;
+	}
+	.invite-footer
+	{   
+	a
+	{
+	font-family:$font-light;
+	color:$dark-blue;
+	font-weight:700;
+	}
+	font-weight:700;
+	font-size:$rem2/2;
+	font-family:$font-light;
+	 color: $color-dark-grey;
+	    margin: $rem2+1 $value0  $rem2 $value0;   
+	}
+	.skip-btn{
+	@include respond-to(handhelds)
+	{
+	margin-bottom:$rem2/2;
+	}
+	border: 2px solid #C7CACD;
+	font-family: $font-bold;
+    font-size: $value40/2!important;
+    padding: 10px 34px;
+	color:$color-dk-grey!important;
+    border-radius: $value40/10;
+	width:$height;	
+	}
+	button.btn-green
+	{
+	
+    background:$green;
+	border:2px solid $green;
+    font-family: $font-bold;
+    font-size: $value40/2;
+    padding: 10px 34px;
+	width:$height;
+    border-radius: $value40/10;
+	}
+	padding:0 $value30/2 $value30/2 $value30/2;
+}

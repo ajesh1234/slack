@@ -1,0 +1,143 @@
+@import "../variable/variable";
+
+.my-logo
+{
+margin:$rem2/2;
+}
+.create-url
+{
+	h1
+		{
+			  @include respond-to (handhelds)
+	{
+		font-size:$value30+6;
+		
+	}
+	    font-size: $value40+2;
+        line-height: $value40+8;
+	    font-family: $font-light;	
+		color:$color-dark-grey;
+		margin-bottom:$rem2
+	}
+	p.head-top
+	{	
+	font-family:$font-regular;
+	font-size: $rem2/2 + $rem2/8;
+    color: $color-dk-grey;
+    margin-bottom: $rem2;
+	}
+.form-group
+{
+.input-group
+{
+.input-group-addon
+{   font-size: $rem2/2 + $rem2/8;
+    font-family:$font-bold;
+	color:$color-dark-grey;
+    background: $none;
+    border: $none;
+}
+}
+label
+{
+span
+{
+font-family:$font-light;
+color:$color-dk-grey;
+}
+margin-bottom:$rem2/2;
+font-family:$font-medium;
+color:$color-dark-grey;
+font-size:$value30/2+1;
+}
+}
+input.form-control
+{
+@include inputform;    
+}
+button.btn-green
+	{
+	i.fa{
+		    font-size:$value30/2;
+        margin-left: $value40/10;
+		}
+    background:$green;
+    font-family: $font-bold;
+    font-size: $value40/2;
+    padding: 13px 34px;
+    border-radius: $value40/10;
+	}
+.url-bottom
+{
+p
+{
+a
+{
+color:$green;
+font-family:$font-light;
+}
+font-family:$font-light;
+color:$color-dark-grey;
+font-weight:700;
+font-size: $value30/2+1;
+}
+min-height:$rem2*4;
+}
+padding:0 $value30/2 $value30/2 $value30/2;
+}
+.my-modal
+{
+.modal-content
+{
+button.btn-green
+	{
+    background:$green;
+    font-family: $font-bold;
+    font-size: $value40/2;
+    padding: 13px 34px;
+    border-radius: $value40/10;
+	}
+.modal-body
+{
+h1
+{   font-family: $font-light;	
+	color:$color-dark-grey;
+    font-weight: 300;
+    font-size:$value40+2;
+    margin-bottom:$rem2 + $rem2/4;
+    line-height:$rem2 + 1;	
+}
+p
+{  
+a
+{
+font-family:$font-light;
+color:$color-dark-grey;
+}   font-weight: 500;
+    font-family:$font-light;
+    font-size: $value30/2+2;
+    display: block;
+    line-height: 1.6;
+	color:$color-dark-grey;
+    margin-bottom:$rem2 + $rem2/4;
+}  
+.modal-btn
+{    margin-bottom: $value40/2;
+    display: inline-block;
+    width: $height;
+}  
+  border-radius:$value40/4+2;
+  padding:$rem2+1;
+	   
+}  
+   border: $none;
+   border-radius:$value40/4+2;
+}
+@include respond-to(handhelds)
+{
+max-width: 100%;
+}
+max-width: 600px;
+box-shadow:$none;
+}
+

@@ -1,0 +1,64 @@
+@import "../variable/variable";
+.my-logo
+{
+margin:$rem2/2;
+}
+.create-name
+{
+	h1
+		{
+			  @include respond-to (handhelds)
+	{
+		font-size:$value30+6;
+		
+	}
+			font-family: $font-light;	
+		  color:$color-dark-grey;
+		  margin-bottom:$rem2
+	}
+	
+p.head-top{	
+font-family:$font-light;
+color:$color-dk-grey;
+font-size: $value40/2;
+font-weight:700;
+line-height: $normal;
+margin-bottom:$value30+2;
+}
+p
+{
+font-family:$font-light;
+color:$color-dk-grey;font-weight:700;
+font-size: $value30/2+1;
+margin-bottom:$value40;
+}
+label
+{
+span
+{font-family:$font-light;
+}
+font-family:$font-regular;
+color:$color-dark-grey;
+font-size:$value30/2+1;
+}
+input.form-control
+{
+@include inputform;    
+}
+input.form-control:first-child
+{
+    margin-bottom: $value40/2+3;
+}
+button
+	{
+	i.fa{
+		    font-size:$value30/2;
+        margin-left: $value40/10;
+		}
+    font-family: $font-bold;
+    font-size: $value40/2;
+    padding: 13px 34px;
+    border-radius: $value40/10;
+	}
+padding:0 $value30/2 $value30/2 $value30/2;
+}
